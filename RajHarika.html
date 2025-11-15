@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RAJ PAVAN & HARIKA - Wedding Invitation</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#d4af37',secondary:'#f8f4e6'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.hero-bg {
+ background-image: url('images/BACK.jpg '); 
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+} 
+
+.bride-bg {
+background-image: url('images/GROOM.jpg');
+}
+.groom-bg {
+background-image: url('images/BRIDE1.jpg')}
+.gallery-img-1 {
+background-image: url('images/COUPLE.jpg')}
+.gallery-img-2 {
+background-image: url('images/COUPLE2.jpg');
+}
+.gallery-img-3 {
+background-image: url('images/couple\ 4.JPG');
+}
+.gallery-img-4 {
+background-image: url('images/couple\ 5.JPG');
+}
+.venue-bg {
+background-image: url('https://readdy.ai/api/search-image?query=elegant%20wedding%20venue%20with%20beautiful%20garden%20setting%2C%20white%20chairs%20arranged%20for%20ceremony%2C%20floral%20decorations%2C%20romantic%20outdoor%20wedding%20setup%20with%20natural%20lighting&width=800&height=600&seq=venue001&orientation=landscape');
+}
+.quotes-bg {
+background-image: url('https://readdy.ai/api/search-image?query=soft%20romantic%20background%20with%20delicate%20floral%20patterns%2C%20pastel%20colors%2C%20elegant%20and%20dreamy%20atmosphere%2C%20perfect%20for%20wedding%20quotes%20and%20text%20overlay&width=1200&height=800&seq=quotes001&orientation=landscape');
+}
+.scroll-indicator {
+animation: bounce 2s infinite;
+}
+@keyframes bounce {
+0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+40% { transform: translateY(-10px); }
+60% { transform: translateY(-5px); }
+}
+.fade-in {
+opacity: 0;
+transform: translateY(30px);
+transition: all 0.6s ease;
+}
+.fade-in.visible {
+opacity: 1;
+transform: translateY(0);
+}
+.heart-beat {
+animation: heartbeat 2s ease-in-out infinite;
+}
+@keyframes heartbeat {
+0% { transform: scale(1); }
+50% { transform: scale(1.1); }
+100% { transform: scale(1); }
+}
+.floating {
+animation: floating 3s ease-in-out infinite;
+}
+@keyframes floating {
+0% { transform: translateY(0px); }
+50% { transform: translateY(-10px); }
+100% { transform: translateY(0px); }
+}
+.animate-scroll {
+animation: scroll 30s linear infinite;
+}
+@keyframes scroll {
+0% { transform: translateX(0); }
+100% { transform: translateX(-50%); }
+}
+html { scroll-behavior: smooth; }
+</style>
+</head>
+<body class="bg-white">
+<nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 shadow-sm">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
+<div class="font-['Dancing_Script'] text-2xl font-bold text-primary">R & H</div>
+<div class="hidden md:flex space-x-8">
+<a href="#home" class="text-gray-700 hover:text-primary transition-colors">Home</a>
+<a href="#story" class="text-gray-700 hover:text-primary transition-colors">Our Story</a>
+<a href="#gallery" class="text-gray-700 hover:text-primary transition-colors">Gallery</a>
+<a href="#details" class="text-gray-700 hover:text-primary transition-colors">Details</a>
+<a href="#location" class="text-gray-700 hover:text-primary transition-colors">Location</a>
+</div>
+<button id="musicToggle" class="w-10 h-10 flex items-center justify-center text-primary hover:bg-primary/10 rounded-full transition-colors">
+<i class="ri-music-line ri-lg"></i>
+</button>
+</div>
+</div>
+</nav>
+<section id="home" class="hero-bg min-h-screen flex items-center justify-center relative">
+<div class="absolute inset-0 bg-black/30"></div>
+<div class="relative z-10 text-center text-white px-4">
+<div class="fade-in">
+<h1 class="font-['Playfair_Display'] text-6xl md:text-8xl font-bold mb-4">Raj Pavan & Harika </h1>
+<p class="font-['Dancing_Script'] text-2xl md:text-3xl mb-8">Are Getting Married</p>
+<div class="flex items-center justify-center space-x-4 mb-8">
+<div class="w-16 h-px bg-white"></div>
+<i class="ri-heart-fill ri-2x text-primary heart-beat"></i>
+<div class="w-16 h-px bg-white"></div>
+</div>
+<p class="text-xl md:text-2xl font-light">November 22, 2025</p>
+<p class="text-lg opacity-90 mt-2">Near Nookambika Temple, Darlapudi</p>
+</div>
+</div>
+<div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white scroll-indicator">
+<i class="ri-arrow-down-line ri-2x"></i>
+</div>
+</section>
+<section id="story" class="py-20 bg-secondary/30">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16 fade-in">
+<h2 class="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-gray-800 mb-4">Meet the Couple</h2>
+<div class="w-24 h-1 bg-primary mx-auto"></div>
+</div>
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div class="text-center fade-in">
+<div class="bride-bg w-80 h-96 mx-auto rounded-2xl bg-cover bg-center mb-6 shadow-2xl"></div>
+<h3 class="font-['Playfair_Display'] text-3xl font-bold text-gray-800 mb-2">Raj Pavan Polisetti</h3>
+<p class="text-gray-600 leading-relaxed">An engineer of dreams and a guardian of safety, Raj Pavan finds beauty in both structure and soul. Calm in spirit and strong in will, He’s ready to build not just a future, but a forever.</p>
+</div>
+<div class="text-center fade-in">
+<div class="groom-bg w-80 h-96 mx-auto rounded-2xl bg-cover bg-center mb-6 shadow-2xl"></div>
+<h3 class="font-['Playfair_Display'] text-3xl font-bold text-gray-800 mb-2">Harika Barnikana</h3>
+<p class="text-gray-600 leading-relaxed">A creator of ideas and a seeker of knowledge, Harika finds beauty in both logic and love.Curious in mind and gentle in heart, She’s ready to code not just a life, but a lifetime of love.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="gallery" class="py-20 bg-secondary/20">
+<div class="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16 fade-in">
+<h2 class="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-gray-800 mb-4">Our Gallery</h2>
+<div class="w-24 h-1 bg-primary mx-auto"></div>
+</div>
+<div class="overflow-hidden">
+<div class="gallery-scroll flex gap-6 animate-scroll">
+<div class="gallery-img-1 flex-shrink-0 w-96 h-64 rounded-xl bg-cover bg-center shadow-lg"></div>
+<div class="gallery-img-2 flex-shrink-0 w-96 h-64 rounded-xl bg-cover bg-center shadow-lg"></div>
+<div class="gallery-img-3 flex-shrink-0 w-96 h-64 rounded-xl bg-cover bg-center shadow-lg"></div>
+<div class="gallery-img-4 flex-shrink-0 w-96 h-64 rounded-xl bg-cover bg-center shadow-lg"></div>
+<div class="gallery-img-1 flex-shrink-0 w-96 h-64 rounded-xl bg-cover bg-center shadow-lg"></div>
+<div class="gallery-img-2 flex-shrink-0 w-96 h-64 rounded-xl bg-cover bg-center shadow-lg"></div>
+<div class="gallery-img-3 flex-shrink-0 w-96 h-64 rounded-xl bg-cover bg-center shadow-lg"></div>
+<div class="gallery-img-4 flex-shrink-0 w-96 h-64 rounded-xl bg-cover bg-center shadow-lg"></div>
+</div>
+</div>
+</div>
+</section>
+<section id="details" class="py-20 bg-white">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16 fade-in">
+<h2 class="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-gray-800 mb-4">Save the Date</h2>
+<div class="w-24 h-1 bg-primary mx-auto"></div>
+</div>
+<div class="bg-gradient-to-r from-primary/10 to-secondary/30 rounded-3xl p-12 text-center fade-in">
+<div class="floating">
+<i class="ri-calendar-heart-line ri-4x text-primary mb-6"></i>
+</div>
+<h3 class="font-['Playfair_Display'] text-5xl font-bold text-gray-800 mb-4">November 22, 2025</h3>
+<p class="text-2xl text-gray-600 mb-8">Saturday at 7:00 PM</p>
+<div id="countdown" class="grid grid-cols-4 gap-4 mb-8 max-w-md mx-auto">
+<div class="bg-white rounded-lg p-4 shadow-lg">
+<div id="days" class="text-3xl font-bold text-primary">0</div>
+<div class="text-sm text-gray-600">Days</div>
+</div>
+<div class="bg-white rounded-lg p-4 shadow-lg">
+<div id="hours" class="text-3xl font-bold text-primary">0</div>
+<div class="text-sm text-gray-600">Hours</div>
+</div>
+<div class="bg-white rounded-lg p-4 shadow-lg">
+<div id="minutes" class="text-3xl font-bold text-primary">0</div>
+<div class="text-sm text-gray-600">Minutes</div>
+</div>
+<div class="bg-white rounded-lg p-4 shadow-lg">
+<div id="seconds" class="text-3xl font-bold text-primary">0</div>
+<div class="text-sm text-gray-600">Seconds</div>
+</div>
+</div>
+<button id="addToCalendar" class="bg-primary text-white px-8 py-4 rounded-button text-lg font-semibold hover:bg-primary/90 transition-colors whitespace-nowrap !rounded-button">
+<i class="ri-calendar-line mr-2"></i>Add to Calendar
+</button>
+</div>
+<div class="grid md:grid-cols-2 gap-12 mt-16">
+<div class="text-center fade-in">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+<i class="ri-church-line ri-2x text-primary"></i>
+</div>
+<h3 class="font-['Playfair_Display'] text-2xl font-bold text-gray-800 mb-2">Sumuhurtham</h3>
+<p class="text-gray-600 mb-2">November 22 </p>
+<p class="text-gray-600">On Saturday - 5:25 AM</p>
+<p class="text-gray-600">(Early hours of Sunday)</p>
+</div>
+<div class="text-center fade-in">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+<i class="ri-restaurant-line ri-2x text-primary"></i>
+</div>
+<h3 class="font-['Playfair_Display'] text-2xl font-bold text-gray-800 mb-2">Reception</h3>
+<p class="text-gray-600 mb-2">November 22 - 7:00 PM Onwards</p>
+<p class="text-gray-600">Near Nookambika Temple, Polisetti Street</p>
+<p class="text-gray-600">Darlapudi Village</p>
+</div>
+</div>
+</div>
+</section>
+<section id="location" class="py-20 bg-secondary/20">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16 fade-in">
+<h2 class="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-gray-800 mb-4">Wedding Venue</h2>
+<div class="w-24 h-1 bg-primary mx-auto"></div>
+</div>
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+<div class="fade-in">
+<div class="venue-bg h-96 rounded-2xl bg-cover bg-center shadow-2xl"></div>
+</div>
+<div class="fade-in">
+<h3 class="font-['Playfair_Display'] text-3xl font-bold text-gray-800 mb-4">DARLAPUDI, NEAR NOOKAMBIKA TEMPLE </h3>
+<p class="text-gray-600 mb-6 leading-relaxed">A serene haven nestled in the charm of Darlapudi, near the sacred Nookambika Temple. Surrounded by lush greenery and the gentle whispers of nature, this picturesque setting blends tradition with tranquility. It offers the perfect backdrop for love and celebration — where every moment feels divine and every memory, timeless.</p>
+<div class="space-y-4 mb-8">
+<div class="flex items-center">
+<i class="ri-map-pin-line ri-lg text-primary mr-3"></i>
+<span class="text-gray-700">Polisetti street, S.Rayavaram, 531082 </span>
+</div>
+<div class="flex items-center">
+<i class="ri-phone-line ri-lg text-primary mr-3"></i>
+<span class="text-gray-700">+91 6302285675 </span>
+</div>
+
+</div>
+<button id="getDirections" class="bg-primary text-white px-6 py-3 rounded-button font-semibold hover:bg-primary/90 transition-colors whitespace-nowrap !rounded-button">
+<i class="ri-navigation-line mr-2"></i>Get Directions
+</button>
+</div>
+</div>
+<div class="mt-12 fade-in">
+<div class="bg-white rounded-2xl p-8 shadow-lg">
+<div class="w-full h-96 bg-gray-200 rounded-xl flex items-center justify-center" style="background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png'); background-size: cover; background-position: center;">
+<div class="bg-white/90 p-4 rounded-lg">
+<p class="text-gray-700 font-semibold">Interactive Map</p>
+<p class="text-sm text-gray-600">Click "Get Directions" for navigation</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="quotes-bg py-20 bg-cover bg-center relative">
+<div class="absolute inset-0 bg-white/80"></div>
+<div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<div class="fade-in">
+<h2 class="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-gray-800 mb-16">Words of Love</h2>
+<div class="space-y-12">
+<blockquote class="text-2xl md:text-3xl font-['Dancing_Script'] text-gray-700 italic">
+"Being deeply loved by someone gives you strength, while loving someone deeply gives you courage."
+<footer class="text-lg text-gray-600 mt-4 not-italic">— Lao Tzu</footer>
+</blockquote>
+<blockquote class="text-2xl md:text-3xl font-['Dancing_Script'] text-gray-700 italic">
+"The best thing to hold onto in life is each other."
+<footer class="text-lg text-gray-600 mt-4 not-italic">— Audrey Hepburn</footer>
+</blockquote>
+<blockquote class="text-2xl md:text-3xl font-['Dancing_Script'] text-gray-700 italic">
+"Love is not about how many days, months, or years you have been together. It's about how much you love each other every single day."
+<footer class="text-lg text-gray-600 mt-4 not-italic">— Unknown</footer>
+</blockquote>
+</div>
+</div>
+</div>
+</section>
+
+<footer class="bg-gray-800 text-white py-12">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<div class="mb-8">
+<h3 class="font-['Dancing_Script'] text-4xl font-bold mb-4">Raj Pavan & Harika </h3>
+<p class="text-gray-300 mb-6">Thank you for being part of our love story</p>
+<div class="flex justify-center space-x-6 mb-8">
+<a href="rajpavanprp@gmail.com" class="w-12 h-12 flex items-center justify-center bg-primary rounded-full hover:bg-primary/80 transition-colors">
+<i class="ri-mail-line ri-lg"></i>
+</a>
+<a href="tel:+916302285675" class="w-12 h-12 flex items-center justify-center bg-primary rounded-full hover:bg-primary/80 transition-colors">
+<i class="ri-phone-line ri-lg"></i>
+</a>
+<button id="footerMusicToggle" class="w-12 h-12 flex items-center justify-center bg-primary rounded-full hover:bg-primary/80 transition-colors">
+<i class="ri-music-line ri-lg"></i>
+</button>
+</div>
+</div>
+<div class="border-t border-gray-700 pt-8">
+<p class="text-gray-400">&copy; 2025 Raj Pavan & Harika Wedding. Made with love.</p>
+</div>
+</div>
+</footer>
+<audio id="backgroundMusic" loop>
+<source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmwhBSuBzvLZiTYIG2m98OScTgwOUarm7blmHgU7k9n1unEiBC13yO/eizEIHWq+8+OWT" type="audio/wav">
+</audio>
+<script id="navigation-scroll">
+document.addEventListener('DOMContentLoaded', function() {
+const navLinks = document.querySelectorAll('nav a[href^="#"]');
+navLinks.forEach(link => {
+link.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href').substring(1);
+const targetElement = document.getElementById(targetId);
+if (targetElement) {
+targetElement.scrollIntoView({ behavior: 'smooth' });
+}
+});
+});
+});
+</script>
+<script id="fade-in-animation">
+document.addEventListener('DOMContentLoaded', function() {
+const observerOptions = {
+threshold: 0.1,
+rootMargin: '0px 0px -50px 0px'
+};
+const observer = new IntersectionObserver(function(entries) {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+entry.target.classList.add('visible');
+}
+});
+}, observerOptions);
+document.querySelectorAll('.fade-in').forEach(el => {
+observer.observe(el);
+});
+});
+</script>
+<script id="countdown-timer">
+document.addEventListener('DOMContentLoaded', function() {
+const weddingDate = new Date('2025-11-22T19:00:00').getTime();
+function updateCountdown() {
+const now = new Date().getTime();
+const distance = weddingDate - now;
+const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+document.getElementById('days').textContent = days;
+document.getElementById('hours').textContent = hours;
+document.getElementById('minutes').textContent = minutes;
+document.getElementById('seconds').textContent = seconds;
+if (distance < 0) {
+document.getElementById('countdown').innerHTML = '<div class="text-2xl font-bold text-primary">The Big Day is Here!</div>';
+}
+}
+updateCountdown();
+setInterval(updateCountdown, 1000);
+});
+</script>
+<script id="calendar-integration">
+document.addEventListener('DOMContentLoaded', function() {
+document.getElementById('addToCalendar').addEventListener('click', function() {
+const startDate = '20250615T160000Z';
+const endDate = '20250615T230000Z';
+const title = 'Sarah & Michael Wedding';
+const location = 'Rosewood Manor Gardens, 1234 Garden Lane, Riverside, CA 92501';
+const details = 'Join us for the wedding celebration of Sarah and Michael!';
+const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${startDate}/${endDate}&location=${encodeURIComponent(location)}&details=${encodeURIComponent(details)}`;
+window.open(googleCalendarUrl, '_blank');
+});
+});
+</script>
+<script id="directions-integration">
+document.addEventListener('DOMContentLoaded', function() {
+document.getElementById('getDirections').addEventListener('click', function() {
+const address = 'Rosewood Manor Gardens, 1234 Garden Lane, Riverside, CA 92501';
+const googleMapsUrl = `https://maps.app.goo.gl/ED67e5hxJHzLiyPt9?g_st=aw`;
+window.open(googleMapsUrl, '_blank');
+});
+});
+</script>
+
+<script id="background-music-control">
+document.addEventListener('DOMContentLoaded', function() {
+const music = document.getElementById('backgroundMusic');
+const musicToggle = document.getElementById('musicToggle');
+const footerMusicToggle = document.getElementById('footerMusicToggle');
+let isPlaying = false;
+function toggleMusic() {
+if (isPlaying) {
+music.pause();
+musicToggle.innerHTML = '<i class="ri-music-line ri-lg"></i>';
+footerMusicToggle.innerHTML = '<i class="ri-music-line ri-lg"></i>';
+} else {
+music.play().catch(e => console.log('Audio play failed:', e));
+musicToggle.innerHTML = '<i class="ri-pause-line ri-lg"></i>';
+footerMusicToggle.innerHTML = '<i class="ri-pause-line ri-lg"></i>';
+}
+isPlaying = !isPlaying;
+}
+musicToggle.addEventListener('click', toggleMusic);
+footerMusicToggle.addEventListener('click', toggleMusic);
+setTimeout(() => {
+music.play().then(() => {
+isPlaying = true;
+musicToggle.innerHTML = '<i class="ri-pause-line ri-lg"></i>';
+footerMusicToggle.innerHTML = '<i class="ri-pause-line ri-lg"></i>';
+}).catch(e => console.log('Auto-play failed:', e));
+}, 2000);
+});
+</script>
+</body>
+</html>
